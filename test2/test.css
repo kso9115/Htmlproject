@@ -1,0 +1,43 @@
+/*기본 구조에 대한 서식 */
+/* 1. 기본 브라우저 속성 초기화 */
+*{
+    padding:0;
+    margin:0;
+}
+/* 2. list의 꾸밈 속성 없애기 */
+li{
+    list-style: none;
+    line-height: 3em;
+    /* line-height 속성은 부모에 걸어줘야하기 때문에 div의 부모인 li에 걸기 */
+}
+/* 3. div:메뉴바 서식 */
+div {
+    width: 100px;
+    height: 50;
+    text-align: center;
+    
+    background-color: rgb(134, 182, 224);
+    
+    color: white;
+    border: 1px solid white;
+}
+/* 4. ul>li>img or ul img 메뉴바 속 이미지 서식 */
+/* div는 img와의 형제 태그니까 사용에 유의하기!! */
+ul>li>img{
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px; /*메뉴바 너비만큼 떨궈줌*/
+    display: none;
+}
+
+/* hover 사용해 동적인 효과 지정 */
+div:hover{
+    opacity: 1;
+}
+
+div:hover+img{
+    display: block;
+}
+

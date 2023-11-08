@@ -1,0 +1,26 @@
+div {
+    text-align: center;
+}
+
+img{
+    width: 500px;
+    height: 500px;
+}
+
+div a{
+    background-color: rgba(128, 128, 128, 0.658);
+    color:blue;
+    text-decoration: none;
+    
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    line-height: 1.5em;
+}
+
+div a:not([href="#"]){
+    background-color: rgba(179, 171, 171, 0.411);
+    color: rgb(167, 78, 167);
+
+}
